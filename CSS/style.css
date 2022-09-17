@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.header-home{
+  background-color: #FFFFFF;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-home ul {
+
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+
+}
+
+.header-home ul a {
+  text-decoration: none;
+  color:#626262;
+  
+}
+
+.imagem-main img {
+  width: 100%;
+}
+
+
+.segundo-h2 {
+  text-align: center;
+  font-weight:900;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.content-section {
+  padding: 20px 200px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocos-filmes {
+  padding: 20px;
+}
+
+.blocos-filmes img {
+  border-radius: 12px;
+  width: 357px;
+}
+
+.footer-geral{
+  background-color: #171717;
+  color: #FFFFFF;
+  padding: 20px;
+
+}
+.logos-footer {
+  display: flex;
+  justify-content:center;  /*para que haja espaçamento entre os itens logo e menu*/
+  gap: 20px;
+    
+  }
+
+.logos-footer img {
+  margin: 20px 10px 10px 30px;
+  transition: transform 0.5s;
+  width: 24px;
+  height: 24px;
+}
+
+.logos-footer img:hover {
+  transform:rotate(180deg);
+  
+}
+
+.main-title p {
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title h1 {
+  font-size: 24px;
+}
+
