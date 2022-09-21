@@ -46,12 +46,23 @@ body {
 
 .imagem-main h1 {
   color: red;
-  align-items:baseline;
-  Size: 72px;
+  font-size: 60px;
 }
 
 .imagem-main p {
   color:#FFFFFF
+}
+
+.imagem-main button {
+  box-sizing: border-box;
+  background: rgba(51, 187, 105, 0.05);
+  border: 1px solid #33BB69;
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 15px;
+  margin: 20px;
+  width: 322px;
 }
 
 .segundo-h2 {  /**/
@@ -69,16 +80,30 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  
 }
+
 
 .blocos-filmes { /**/
   padding: 20px;
+  color: #171717;
+  position: relative;
+
+}
+
+.text {
+  background-color: #626262;
+  display: flexbox;
+  flex-direction: column;
+
 }
 
 .blocos-filmes img { /**/
   border-radius: 12px;
   width: 357px;
+  
 }
+
 
 .footer-geral{ /**/
   background-color: #171717;
