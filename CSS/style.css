@@ -11,7 +11,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.header-home{
+.header-home{   /*Cabeçário da página (home)*/
   background-color: #FFFFFF;
   padding: 20px 80px;
   display: flex;
@@ -19,82 +19,142 @@ body {
   align-items: center;
 }
 
-.header-home ul {
+.header-home ul { /*Lista de acesso do cabeçário*/
 
   display: flex;
   list-style: none;
   gap: 20px;
   font-size: 18px;
+  
 
 }
 
-.header-home ul a {
+.header-home ul a { /*lista de cada item*/
   text-decoration: none;
   color:#626262;
   
 }
 
-.imagem-main img {
+.imagem-main {
+  background-image: url('../Img/Rectangle 2.png');
   width: 100%;
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
+.imagem-main h1 {
+  color: red;
+  align-items:baseline;
+  Size: 72px;
+}
 
-.segundo-h2 {
+.imagem-main p {
+  color:#FFFFFF
+}
+
+.segundo-h2 {  /**/
   text-align: center;
   font-weight:900;
   font-size: 64px;
   line-height: 75px;
+  
 }
 
-.content-section {
-  padding: 20px 200px;
+.content-section { /**/
+  gap:15px;
   margin: 50px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.blocos-filmes {
+.blocos-filmes { /**/
   padding: 20px;
 }
 
-.blocos-filmes img {
+.blocos-filmes img { /**/
   border-radius: 12px;
   width: 357px;
 }
 
-.footer-geral{
+.footer-geral{ /**/
   background-color: #171717;
   color: #FFFFFF;
   padding: 20px;
 
 }
-.logos-footer {
+.logos-footer { /**/
   display: flex;
   justify-content:center;  /*para que haja espaçamento entre os itens logo e menu*/
   gap: 20px;
     
   }
 
-.logos-footer img {
+.logos-footer img { /**/
   margin: 20px 10px 10px 30px;
   transition: transform 0.5s;
   width: 24px;
   height: 24px;
 }
 
-.logos-footer img:hover {
+.logos-footer img:hover { /**/
   transform:rotate(180deg);
   
 }
 
-.main-title p {
+.main-title p { /**/
   font-size: 14px;
   line-height: 16px;
   display: flex;
   justify-content: center;
 }
 
-.main-title h1 {
+.main-title h1 { /**/
   font-size: 24px;
 }
 
+@media(max-width: 900px){
+  .header-home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-home ul {
+    flex-direction: column;
+    align-items: center;
+      
+  }
+  
+  .imagem-main{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .segundo-h2{
+    flex-direction: column;
+    align-items: center;
+    background-color: #171717;
+  }
+
+  .content-section{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  
+  .blocos-filmes{
+    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  .footer-geral{
+    flex-direction: column;
+    align-items: center;
+  }
+}
