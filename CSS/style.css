@@ -1,147 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.header-home{   /*Cabeçário da página (home)*/
-  background-color: #FFFFFF;
+.header-home {
+  /*Cabeçário da página (home)*/
+  background-color: #ffffff;
   padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-home ul { /*Lista de acesso do cabeçário*/
+.header-home ul {
+  /*Lista de acesso do cabeçário*/
 
   display: flex;
   list-style: none;
   gap: 20px;
   font-size: 18px;
-  
-
 }
 
-.header-home ul a { /*lista de cada item*/
+.header-home ul a {
+  /*lista de cada item*/
   text-decoration: none;
-  color:#626262;
-  
+  color: #626262;
 }
 
 .imagem-main {
-  background-image: url('../Img/Rectangle 2.png');
+  /*imagem de fundo*/
+  background-image: url("../Img/Rectangle 2.png");
   width: 100%;
   padding: 20%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .imagem-main h1 {
+  /*título DH*/
   color: red;
   font-size: 60px;
+  font-weight: 900;
 }
 
 .imagem-main p {
-  color:#FFFFFF
+  /*descrição do título*/
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .imagem-main button {
+  /*botão da imagem principal*/
   box-sizing: border-box;
   background: rgba(51, 187, 105, 0.05);
-  border: 1px solid #33BB69;
+  border: 1px solid #33bb69;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
   padding: 15px;
   margin: 20px;
   width: 322px;
 }
 
-.segundo-h2 {  /**/
+.texto-do-card {
+  background: #f4f4f4;
+  border-radius: 12px;
+  width: 100%;
+  height: 271.44px;
+  left: 80px;
+  top: 1452.7px;
+}
+
+.segundo-h2 {
+  /*Itens*/
   text-align: center;
-  font-weight:900;
+  font-weight: 900;
   font-size: 64px;
   line-height: 75px;
-  
 }
 
-.content-section { /**/
-  gap:15px;
-  margin: 50px;
-  display: flex;
-  flex-wrap: wrap;
+.container-pai {
+  margin: 8%;
   align-items: center;
-  justify-content: center;
-  
 }
 
-
-.blocos-filmes { /**/
-  padding: 20px;
-  color: #171717;
-  position: relative;
-
-}
-
-.text {
-  background-color: #626262;
-  display: flexbox;
-  flex-direction: column;
-
-}
-
-.blocos-filmes img { /**/
-  border-radius: 12px;
-  width: 357px;
-  
-}
-
-
-.footer-geral{ /**/
+.footer-geral {
+  /**/
   background-color: #171717;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px;
-
 }
-.logos-footer { /**/
+.logos-footer {
+  /**/
   display: flex;
-  justify-content:center;  /*para que haja espaçamento entre os itens logo e menu*/
+  justify-content: center; /*para que haja espaçamento entre os itens logo e menu*/
   gap: 20px;
-    
-  }
+}
 
-.logos-footer img { /**/
+.logos-footer img {
+  /**/
   margin: 20px 10px 10px 30px;
   transition: transform 0.5s;
   width: 24px;
   height: 24px;
 }
 
-.logos-footer img:hover { /**/
-  transform:rotate(180deg);
-  
+.logos-footer img:hover {
+  /**/
+  transform: rotate(180deg);
 }
 
-.main-title p { /**/
+.main-title p {
+  /**/
   font-size: 14px;
   line-height: 16px;
   display: flex;
   justify-content: center;
 }
 
-.main-title h1 { /**/
+.main-title h1 {
+  /**/
   font-size: 24px;
 }
 
-@media(max-width: 900px){
+@media (max-width: 900px) {
   .header-home {
     flex-direction: column;
     align-items: center;
@@ -150,36 +141,46 @@ body {
   .header-home ul {
     flex-direction: column;
     align-items: center;
-      
-  }
-  
-  .imagem-main{
-    flex-direction: column;
-    align-items: center;
-    
   }
 
-  .segundo-h2{
+  .imagem-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .segundo-h2 {
     flex-direction: column;
     align-items: center;
     background-color: #171717;
   }
 
-  .content-section{
+  .content-section {
     flex-direction: column;
     align-items: center;
     display: flex;
   }
-  
-  .blocos-filmes{
+
+  .blocos-filmes {
     background-color: aqua;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    
   }
-  .footer-geral{
+  .footer-geral {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.item-filme img{
+  position: absolute;
+  z-index: 5;
+}
+
+.desc-filme {
+  position: relative;
+  bottom: -240px;
+  z-index: 6;
+  background-color: #F4F4F4;
+  height: 272px;
 }
