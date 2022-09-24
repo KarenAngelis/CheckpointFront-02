@@ -5,14 +5,16 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #ffffff;
 }
 
-.header-home {
   /*Cabeçário da página (home)*/
+
+.header-home {
   background-color: #ffffff;
   padding: 20px 80px;
   display: flex;
@@ -20,13 +22,17 @@ body {
   align-items: center;
 }
 
-.header-home ul {
   /*Lista de acesso do cabeçário*/
 
+.header-home ul {
   display: flex;
   list-style: none;
   gap: 20px;
   font-size: 18px;
+}
+
+.painel {
+  visibility: hidden;
 }
 
 .header-home ul a {
@@ -35,8 +41,9 @@ body {
   color: #626262;
 }
 
-.imagem-main {
   /*imagem de fundo*/
+
+.imagem-main {
   background-image: url("../Img/Rectangle 2.png");
   width: 100%;
   padding: 20%;
@@ -45,8 +52,9 @@ body {
   align-items: center;
 }
 
-.imagem-main h1 {
   /*título DH*/
+
+.imagem-main h1 {
   color: red;
   font-size: 60px;
   font-weight: 900;
@@ -58,8 +66,8 @@ body {
   font-size: 24px;
 }
 
-.imagem-main button {
   /*botão da imagem principal*/
+.imagem-main button {
   box-sizing: border-box;
   background: rgba(51, 187, 105, 0.05);
   border: 1px solid #33bb69;
@@ -71,34 +79,99 @@ body {
   width: 322px;
 }
 
-.texto-do-card {
-  background: #f4f4f4;
-  border-radius: 12px;
-  width: 100%;
-  height: 271.44px;
-  left: 80px;
-  top: 1452.7px;
-}
+/* Primeiro titulo do main */
 
-.segundo-h2 {
   /*Itens*/
+.segundo-h2 {
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 64px;
   line-height: 75px;
 }
 
+/* Parte dos filmes */
+
 .container-pai {
-  margin: 8%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 30px;
+  padding: 40px;
   align-items: center;
 }
 
-.footer-geral {
-  /**/
-  background-color: #171717;
-  color: #ffffff;
+.filmes {
+  height: 527px;
+  display: inline;
+  text-align: center;
+}
+ 
+.filmes button {
+  width: 276.46px;
+  height: 59.3px;
+  background: #33BB69;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.artigo {
+  background-color: #f4f4f4;
+  position: relative;
+  top: -272px;
+  border-radius:13px;
+  width: 409px;
+  height: 272px;
+
+}
+
+.titulo {
+  font-size: 24px;
+  line-height: 47px;
+  font-weight: 700;
+  padding: 10px;
+  width: 63px;
+  height: 23.39px;
+  left: 112px;
+  top: 1479.43px;
+  font-weight:600;
+}
+
+
+.texto {
+  width: 395px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 290;
+  text-align: justify;
   padding: 20px;
 }
+
+
+/* Final da pagina */
+
+.footer-geral {
+  /**/
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #171717;
+  padding: 50px;
+}
+
+.nomes-foote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .logos-footer {
   /**/
   display: flex;
@@ -112,6 +185,7 @@ body {
   transition: transform 0.5s;
   width: 24px;
   height: 24px;
+
 }
 
 .logos-footer img:hover {
@@ -119,68 +193,60 @@ body {
   transform: rotate(180deg);
 }
 
-.main-title p {
-  /**/
-  font-size: 14px;
-  line-height: 16px;
-  display: flex;
-  justify-content: center;
-}
+/*Responsive*/
 
-.main-title h1 {
-  /**/
-  font-size: 24px;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 428px) {
   .header-home {
-    flex-direction: column;
-    align-items: center;
+    justify-content:space-between;
+    display: flex;
+    gap:80px;
+  }
+
+  .painel {
+    visibility: visible;
   }
 
   .header-home ul {
-    flex-direction: column;
-    align-items: center;
+    visibility: hidden;
   }
 
   .imagem-main {
     flex-direction: column;
     align-items: center;
+    width: 463px;
+    top: 20px;
+  }
+
+  .imagem-main h1 {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 84px;
+    justify-content:center;
+    display: flex;
   }
 
   .segundo-h2 {
     flex-direction: column;
-    align-items: center;
-    background-color: #171717;
+    text-align: center;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 900;
+    padding: 12px;
   }
 
-  .content-section {
-    flex-direction: column;
-    align-items: center;
+  .container-pai {
     display: flex;
-  }
-
-  .blocos-filmes {
-    background-color: aqua;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    padding: 12px;
   }
+
   .footer-geral {
     flex-direction: column;
     align-items: center;
+    width: 463px;
+    top: 20px;
+    gap: 30px;
   }
-}
 
-.item-filme img{
-  position: absolute;
-  z-index: 5;
-}
-
-.desc-filme {
-  position: relative;
-  bottom: -240px;
-  z-index: 6;
-  background-color: #F4F4F4;
-  height: 272px;
 }
